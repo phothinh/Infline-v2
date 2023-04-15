@@ -9,7 +9,6 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
-    "@apollo/federation": "^0.33.9",
     "@mapbox/mapbox-gl-geocoder": "^5.0.1",
     "@nuxtjs/apollo": "^4.0.1-rc.5",
     "@nuxtjs/auth-next": "5.0.0-1667386184.dfbbb54",
