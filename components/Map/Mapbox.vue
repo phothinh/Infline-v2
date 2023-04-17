@@ -1,4 +1,7 @@
 <!-- <template>
+  
+</template> -->
+<template>
     <div class="w-full h-full">
       <div ref="mapContainer" class="absolute top-0 bottom-0 w-full h-full"></div>
     </div>
@@ -8,8 +11,8 @@
   import mapboxgl from 'mapbox-gl';
   import 'mapbox-gl/dist/mapbox-gl.css';
   import MapboxGeocoder from '@mapbox/mapbox-gl-geocoder';
-  import MapboxMarkers from 'mapbox-gl-markers';
-  import { MapboxMarker } from 'mapbox-gl-markers';
+  // import MapboxMarkers from 'mapbox-gl-markers';
+  // import { MapboxMarker } from 'mapbox-gl-markers';
   
   export default {
     name: 'Mapbox',
@@ -26,10 +29,10 @@
         type: Number,
         default: 13
       },
-      markers: {
-        type: Array,
-        required: true
-      }
+      // markers: {
+      //   type: Array,
+      //   required: true
+      // }
     },
     mounted() {
       mapboxgl.accessToken = this.accessToken;
@@ -47,17 +50,17 @@
   
       this.map.addControl(geocoder);
 
-      const markers = new MapboxMarker();
-        this.markers.forEach(marker => {
-        markers.addMarker(marker);
-        });
-        markers.addMarkersToMap(this.map);
+      // const markers = new MapboxMarkers();
+      //   this.markers.forEach(marker => {
+      //   markers.addMarker(marker);
+      //   });
+      //   markers.addMarkersToMap(this.map);
   
-      markers.setMarkers(this.markers);
+      // markers.setMarkers(this.markers);
   
-      this.map.on('load', () => {
-        markers.addMarkersToMap(this.map);
-      });
+      // this.map.on('load', () => {
+      //   markers.addMarkersToMap(this.map);
+      // });
     },
     beforeDestroy() {
       this.map.remove();
@@ -71,4 +74,4 @@
     width: 100%;
   }
   </style>
-   -->
+  

@@ -1,6 +1,6 @@
 <template>
 
-      <div class="flex flex-col w-[46vw] h-[94vh] my-[3vh] mx-[1.5vw] rounded-xl bg-infline-black">
+      <div class="flex flex-col w-[45.5vw] h-[94vh] my-[3vh] mx-[1.5vw] rounded-xl bg-infline-black">
         
         <div class="flex flex-row mt-5 mr-6 justify-end items-center">
             <img src="@/assets/img/icons/tel.svg" class="w-[1vw] mr-2">
