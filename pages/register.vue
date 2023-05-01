@@ -87,7 +87,7 @@ export default {
     },
     redirectToHome() {
             this.$router.push('/');
-        },
+    },
   }
 }
 </script>
